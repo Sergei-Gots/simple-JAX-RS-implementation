@@ -1,4 +1,4 @@
-package org.madhawa.service;
+package org.madhawa.services;
 
 public class HelloService {
 }
