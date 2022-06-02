@@ -7,7 +7,15 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+@Path("/hello")
+public class HelloService {
+    @GET
+    public String getMsg() {
+        return "Hello World !! - Jersey 2";
+    }
+}
 
+/*
 @Path("/hello")
 public class HelloService {
     @GET
@@ -18,4 +26,4 @@ public class HelloService {
         return Response.status(200).entity(output).build();
 
     }
-}
+}*/
