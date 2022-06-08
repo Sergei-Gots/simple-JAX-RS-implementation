@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="simple-JAX-RX" />
+        <module name="simple-JAX-RX.com.sun.jersey" />
         <module name="simple-JAX-RX-implementation" />
       </profile>
     </annotationProcessing>

@@ -11,11 +11,13 @@ import javax.ws.rs.core.Response;
 @Path("/hello")
 public class HelloService {
     @GET
-    @Path("{clientName}")
+/*    @Path("{clientName}")
     @Produces(MediaType.TEXT_PLAIN)
     public Response greetClient(@PathParam("clientName") String name){
         String output = "Hi" + name;
         return Response.status(200).entity(output).build();
-
+*/
+    public String getMsg() {
+        return "Hello from com.sun.Jersey app";
     }
 }
