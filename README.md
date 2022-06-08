@@ -1,4 +1,4 @@
-# simple-JAX-RX-implementation
+# simple-JAX-RS-implementation
 Simple Java RESTful Web Service with Jersey - JAX-RS implementation /with the guidance of Madhawa Perera 
 
 Note: works properly on the Tomcat server ver.9.0.63
