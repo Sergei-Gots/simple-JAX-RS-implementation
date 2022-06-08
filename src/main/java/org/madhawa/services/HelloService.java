@@ -7,23 +7,31 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("/hello")
-public class HelloService {
-    @GET
-    public String getMsg() {
-        return "Hello World !! - Jersey 2";
-    }
-}
 
-/*
 @Path("/hello")
 public class HelloService {
     @GET
     @Path("{clientName}")
     @Produces(MediaType.TEXT_PLAIN)
     public Response greetClient(@PathParam("clientName") String name){
-        String output = "Hi" + name;
+        String output = "Hi " + name;
         return Response.status(200).entity(output).build();
 
+    }
+
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response greetEveryone(){
+        String output = "Hi everyone:)";
+        return Response.status(200).entity(output).build();
+
+    }
+}
+
+/*@Path("/hello")
+public class HelloService {
+    @GET
+    public String getMsg() {
+        return "Hello World !! - Jersey 2";
     }
 }*/
