@@ -22,7 +22,7 @@ public class HelloService {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public Response greetEveryone(){
-        String output = "Hi everyone:)";
+        String output = "Hi Everyone:)";
         return Response.status(200).entity(output).build();
 
     }
